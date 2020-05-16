@@ -61,7 +61,10 @@ header a{
 
 }
 header a:hover{
-	color: black;
+	color: red;
+}
+.lambda {
+    padding-bottom: 3%;
 }
 ol, ul {
 	list-style: none;
