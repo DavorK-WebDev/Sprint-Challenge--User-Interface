@@ -31,6 +31,41 @@ footer, header, hgroup, menu, nav, section {
 body {
 	line-height: 1;
 }
+header{
+	display: flex;
+	justify-content: center;
+	background-color: white;
+	
+}
+.logo{
+	width: 13%;
+	height: 45px;
+    margin-top: -35px;
+    margin-left: 14%;
+
+}
+
+header nav{
+	width: 58%;
+	display: flex;
+	flex-direction: row;
+	text-align: center;
+	align-items: center;
+}
+
+header a{
+	width: 3%;
+	margin: 5% 4%;
+	color: black;
+    text-decoration: none;
+
+}
+header a:hover{
+	color: red;
+}
+.lambda {
+    padding-bottom: 3%;
+}
 ol, ul {
 	list-style: none;
 }
@@ -112,6 +147,46 @@ p {
     justify-content: center;
 }
 
+.middle-content .boxes .box1 {
+    background-color: teal;
+}
+
+.middle-content .boxes .box2 {
+    background-color: gold;
+}
+
+.middle-content .boxes .box3 {
+    background-color: cadetblue;
+}
+
+.middle-content .boxes .box4 {
+    background-color: coral;
+}
+
+.middle-content .boxes .box5 {
+    background-color: crimson;
+}
+
+.middle-content .boxes .box6 {
+    background-color: forestgreen;
+}
+
+.middle-content .boxes .box7 {
+    background-color: darkorchid;
+}
+
+.middle-content .boxes .box8 {
+    background-color: hotpink;
+}
+
+.middle-content .boxes .box9 {
+    background-color: indigo;
+}
+
+.middle-content .boxes .box10 {
+    background-color: dodgerblue;
+}
+
 .bottom-content {
     display: flex;
     margin: 0 2% 20px;
@@ -143,4 +218,56 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+@media(max-width: 500px) {
+    header {
+        flex-direction: column;
+        align-content: center;
+    }
+    header nav {
+        flex-direction: column;
+        justify-content: center;
+        margin-left: 20%;
+        padding-top: 10%;
+    }
+    .container {
+        width: 500px;
+    }
+    .logo {
+        display: flex;
+        justify-content: center;
+        width: 200px;
+    }
+    .top-content {
+        flex-direction: column;
+        align-content: center;
+    }
+    .middle-content {
+        display: flex;
+        flex-direction: column;
+    }
+    .middle-content .boxes .box {
+        width: 50%;
+        height: 200px;
+        flex-direction: column;
+    }
+    .middle-content h2 {
+        text-align: center;
+    }
+    .bottom-content {
+        flex-direction: column;
+        justify-content: center;
+        width: 200px;
+        margin: 30%;
+    }
+    footer nav {
+        flex-direction: column;
+        align-items: center;
+    }
+    footer {
+        display: flex;
+        justify-content: center;
+        width: 50%;
+        margin-left: 25%;
+    }
 }
